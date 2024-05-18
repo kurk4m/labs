@@ -8,7 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/debian", func(w http.ResponseWriter, r *http.Request) {
 		// Read the Bash script file
-		script, err := os.ReadFile("./helper/debian.sh")
+		script, err := os.ReadFile("debian.sh")
 		if err != nil {
 			http.Error(w, "Failed to read Bash script", http.StatusInternalServerError)
 			return

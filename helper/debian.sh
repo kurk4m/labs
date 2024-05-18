@@ -8,3 +8,10 @@ sudo apt install openssh-server
 sudo systemctl start ssh
 sudo systemctl enable ssh
 sudo systemctl status ssh
+
+sudo apt-get install git -y
+
+
+git config --global user.name "name"
+git config --global user.email "email"
+git config --global --list
