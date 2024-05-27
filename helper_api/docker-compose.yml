@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    image: helper_api:v1.0
+    deploy:
+      replicas: 3  # Set the desired number of replicas
+    networks:
+      - alpine-net
+
+networks:
+  alpine-net:
